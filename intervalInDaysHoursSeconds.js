@@ -19,9 +19,7 @@ calculation((firstDateString, secondDateString) => {
   const hours = daysInSeconds / hoursInSeconds;
   const seconds = daysInSeconds;
 
-  return [
-    { result: `INTERVALO EM DIAS: ${days}`},
-    { result: `INTERVALO EM HORAS: ${hours}`},
-    { result: `INTERVALO EM SEGUNDOS: ${seconds}`},
-  ];
+  result({ result: `INTERVALO EM DIAS: ${days}`});
+  result({ result: `INTERVALO EM HORAS: ${hours}`});
+  result({ result: `INTERVALO EM SEGUNDOS: ${seconds}`});
 });
